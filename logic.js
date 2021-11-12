@@ -75,9 +75,6 @@ function StartCountDown(){
   flag=1;
 }
 
-
-
-
 setInterval(displayTime, 1000);
 
 document.getElementById("submit-btn").addEventListener("click", StartCountDown);  // If we write StartCount() instead of StartCount then its executed without being called
