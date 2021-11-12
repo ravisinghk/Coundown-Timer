@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CountDown Timer</title>
+</head>
+
+<body>
+
+    <div id="counter-div">
+        <div id="heading">
+            <h1 id="head">Event Name</h1>
+        </div>
+
+        <div id="countdown-time">
+
+            <div class="time-box">
+                <div class="big-text" id="days">0</div>
+                <div class="time-text" id="day-text">Days</div>
+            </div>
+
+            <div class="time-box">
+                <div class="big-text" id="hours">0</div>
+                <div class="time-text" id="hours-text">Hours</div>
+            </div>
+
+            <div class="time-box">
+                <div class="big-text" id="minutes">0</div>
+                <div class="time-text" id="minutes-text">Minutes</div>
+            </div>
+
+            <div class="time-box">
+                <div class="big-text" id="secs">0</div>
+                <div class="time-text" id="secs-text">Seconds</div>
+            </div>
+
+        </div>
+
+        <div id="button-div">
+            <button id="btn" class="big-button">Create Countdown</button>
+            <button id="reset" class="big-button">Reset</button>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        
+        <div class="modal-content">
+            <div id="modal-head">
+                <span id="text" class="modal-head-item">Create a CountDown</span>
+                <span class="close modal-head-item">&times;</span>
+            </div>
+            
+            <form action="" id="modal-form">
+                <input type="text" class="input-field" id="event-name" placeholder="Enter Event Name">
+                <input type="date" class="input-field" id="event-date" placeholder="Enter Event Date">
+                <button type="submit" class="input-field" id="submit-btn">Submit</button>
+            </form>
+        </div>
+        
+        <script src="logic.js"></script>
+</body>
+
+</html>
